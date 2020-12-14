@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体图标</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	<br><br>
+	
+	<!-- 列表组 list-group -> list-group-item -->
+	<ul class="list-group">
+		<li class="list-group-item">Spring</li>
+		<li class="list-group-item">Mybatis</li>
+		<li class="list-group-item">Spring MVC</li>
+	</ul>
+	
+	<br><br>
+	
+	<!-- 带有徽章的列表组 -->
+	<ul class="list-group">
+		<li class="list-group-item">Spring MVC <span class="badge">21</span></li>
+		<li class="list-group-item">Spring Data <span class="badge">7</span></li>
+		<li class="list-group-item">Spring JPA <span class="badge">17</span></li>
+	</ul>
+	
+	<!-- 带有链接的列表组 -->
+	<ul class="list-group">
+		<a class="list-group-item active" href="javascript:;">Spring MVC <span class="badge">21</span></a>
+		<a class="list-group-item" href="javascript:;">Spring JPA <span class="badge">21</span></a>
+		<a class="list-group-item" href="javascript:;">Spring Boot <span class="badge">21</span></a>
+	</ul>
+	
+	<!-- 加入按钮的列表组 -->
+	<ul class="list-group">
+		<button class="btn btn-default list-group-item active">Spring MVC <span class="badge">21</span></button>
+		<button class="btn btn-default list-group-item list-group-item-info">Spring JPA <span class="badge">21</span></button>
+		<button class="btn btn-default list-group-item list-group-item-danger">Spring Boot <span class="badge">21</span></button>
+		<button class="btn btn-default list-group-item list-group-item-warning">Spring Boot <span class="badge">21</span></button>
+		<button class="btn btn-default list-group-item list-group-item-warning">
+			<h3 class="list-group-item-heading">我是标题</h3>
+			<p class="list-group-item-text">我是描述信息</p>
+		</button>
+	</ul>
+	
+</body>
+</html>

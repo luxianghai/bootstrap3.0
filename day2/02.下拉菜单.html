@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉菜单</title>
+	<!-- bs的核心样式 -->
+  <link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	
+	<!-- 下拉菜单 基本实例 .dropdwon（下拉菜单） -->
+	<div class="dropdown">
+		<!-- 下拉按钮 -->
+		<button class="btn btn-danger" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+		<!-- 下拉菜单 -->
+		<ul class="dropdown-menu">
+			<li><a href="">SpringBoot</a> </li>
+			<li><a href="">SpringMVC</a> </li>
+			<li><a href="">SpringCloud</a> </li>
+		</ul>
+	</div>
+	
+	<br><br>
+	
+	<!--
+		开发一个下拉菜单
+		1.通过 .dropdown 容器包裹 下拉按钮 和 下拉菜单
+		2.下拉菜单加上 .dropdown-menu 样式
+		3.下来按钮加上 data-toggle="dropdown" 来触发菜单的展示和隐藏
+	 -->
+	 <div class="dropdown">
+		 <!-- 下拉按钮-->
+		 <button class="btn btn-info" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+		 <!-- 下拉菜单-->
+		 <ul class="dropdown-menu">
+			 <li><a href="javascript:;">Redis</a></li>
+			 <li><a href="javascript:;">CentOS</a></li>
+			 <!-- 分割线-->
+			 <li class="divider"></li>
+			 <!-- 禁用项-->
+			 <li class="disabled"><a href="javascript:;">Shiro</a></li>
+		 </ul>
+	 </div>
+	 
+	 <br><br>
+	 
+	 <!-- 上拉菜单 在下拉菜单的基础上将 包裹容器的 .dropdown 修改为 .dropup 即可 -->
+	 <div class="dropup">
+		 <!-- 下拉按钮-->
+		 <button class="btn btn-info" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+		 <!-- 下拉菜单-->
+		 <ul class="dropdown-menu">
+			 <li><a href="javascript:;">Redis</a></li>
+			 <li><a href="javascript:;">CentOS</a></li>
+			 <li><a href="javascript:;">Shiro</a></li>
+		 </ul>
+	 </div>
+	 
+	 <br><br>
+	 
+	 <!-- 下拉菜单的标题-->
+	 <div class="dropdown">
+		 <!-- 下拉按钮 -->
+		 <button class="btn btn-warning" data-toggle="dropdown">选择课程类型 <span class="caret"></span></button>
+		 <!-- 下拉菜单 -->
+		 <ul class="dropdown-menu">
+			 <li class="dropdown-header">Spring Stack</li>
+			 <li><a href="">Spring Boot</a></li>
+			 <li><a href="">Spring MVC</a></li>
+			 <li><a href="">Spring Data</a></li>
+			 <li><a href="">Spring Cloud</a></li>
+			 <li class="divider"></li>
+			 <li class="dropdown-header">NoSQL Stack</li>
+			 <li><a href="">Redis</a></li>
+			 <li><a href="">MongoDB</a></li>
+			 <li><a href="">Cassendar</a></li>
+		 </ul>
+	 </div>
+	
+</body>
+</html>

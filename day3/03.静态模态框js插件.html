@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模态框</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			
+			$('#btn').click( () => {
+				// 显示模态框方式一
+				/* $('#myModal').modal({
+					show: true, // 展示模态框
+					backdrop: 'static', // 点击背景时不关闭模态框
+				}); */
+				
+				// 显示模态框方式二
+				//$('#myModal').modal('show');
+				
+				// 显示模态框方式三
+				$('#myModal').modal('toggle');
+			});
+			
+			$('hiddenA').click(() => {
+				//$('#myModal').modal('hide');
+				$('#myModal').modal('toggle');
+			});
+			
+			// 模态框事件的使用
+			$('#myModal').on('show.bs.modal', () => {
+				console.log("调用模态框的show方法时触发 1");
+			});
+			$('#myModal').on('shown.bs.modal', () => {
+				console.log("模态框完全显示之后触发 2");
+			});
+			$('#myModal').on('show.hidd.modal', () => {
+				console.log("隐藏模态框的时候触发 3");
+			});
+			$('#myModal').on('show.bs.modal', () => {
+				console.log("模态框完全隐藏是触发 4");
+			});
+		})
+	</script>
+</head>
+<body>
+	
+	<br><br>
+	<!-- 
+		模态框 modal
+			使用注意事项：
+			1.在一个页面中不支持同时打开多个模态框；千万不要在一个模态框上重叠另一个模态框
+			2.务必将模态框的 HTML 代码放在文档的最高层级内（也就是说，尽量作为 body 标签的直接子元素），
+				以避免其他组件影响模态框的展现和/或功能。
+	 -->
+	 
+	 <!-- 基本实例 .modal 方法：modal(options) 用于激活模态框 -->
+	<div class="modal fade" id="myModal">
+	 <div class="modal-dialog" >
+		 <div class="modal-content">
+			 <!-- 模态框标题-->
+			 <div class="modal-header">
+				 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+				 <h4 class="modal-title">修改用户信息</h4>
+			 </div>
+			 <!-- 模态框内容-->
+			 <div class="modal-body">
+				 <form class="form-horizontal">
+					 <div class="form-group">
+						 <label for="username" class="control-label col-lg-2">用户名</label>
+						 <div class="col-sm-10">
+							 <input type="text" id="username" class="form-control"/>
+						 </div>
+					 </div>
+					 
+					 <div class="form-group">
+						 <label for="pwd" class="control-label col-lg-2">密码</label>
+						 <div class="col-sm-10">
+							 <input type="password" id="pwd" class="form-control"/>
+						 </div>
+					 </div>	
+					 
+					 <div class="form-group">
+						 <label class="control-label col-lg-2">爱好</label>
+						 <div class="col-sm-10">
+							 <div class="checkbox">
+								 <label>
+									<input type="checkbox"/> 篮球
+								 </label>
+								 <label>
+									 <input type="checkbox"/> 排球
+								 </label>
+							 </div>
+						 </div>
+					 </div>
+											
+						<div class="form-group">
+							<label class="control-label col-lg-2">性别</label>
+							<div class="col-sm-10">
+								<div class="radio">
+									<label>
+										<input type="radio" name="gender"/> 男
+									</label>
+									<label>
+										<input type="radio" name="gender"/> 女
+									</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label col-sm-2">城市</label>
+							<div class="col-sm-10">
+								<select class="form-control">
+									<option>上海</option>
+									<option>北京</option>
+									<option>天津</option>
+								</select>
+							</div>
+						</div>
+				 </form>
+			 </div>
+			 <!-- 模态框脚注 -->
+			 <div class="modal-footer">
+				 <button type="button" class="btn btn-default" data-dismiss="modal">取消修改</button>
+				 <button type="button" class="btn btn-primary">确定修改</button>
+				 <button type="button" class="btn btn-primary" id="hiddenA">隐藏</button>
+			 </div>
+		 </div><!-- /.modal-content -->
+	 </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<button class="btn btn-default" id="btn">修改用户信息</button>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>面板组件</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<br><br>
+	
+	<div class="panel panel-warning">
+		<!-- 面板标题 -->
+		<div class="panel-heading">
+			<h1 class="panel-title"><span class="glyphicon glyphicon-user"></span> 用户列表</h1>
+		</div>
+		<!-- 面板内容 -->
+		<div class="panel-body">
+			<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		</div>
+		<!-- 表格 -->
+		<table class="table table-borderd table-condensed table-hover">
+			<tr class="info">
+				<th  class="text-center">编号</th>
+				<th  class="text-center">姓名</th>
+				<th  class="text-center">年龄</th>
+				<th  class="text-center">性别</th>
+				<th  class="text-center">出生日期</th>
+				<th  class="text-center">家庭住址</th>
+				<th  class="text-center">操作</th>
+			</tr>
+			<tbody>
+				<tr class="text-center">
+					<td>1</td>
+					<td>张三</td>
+					<td>23</td>
+					<td>男</td>
+					<td>2012/12/12</td>
+					<td>北京市海定区</td>
+					<td>
+						<a href="javascript:;"><span class="badge">删除</span></a>
+						<a href="javascript:;"><span class="badge">修改</span></a>
+					</td>
+				</tr>
+				<tr class="text-center">
+					<td>2</td>
+					<td>李四</td>
+					<td>23</td>
+					<td>女</td>
+					<td>2012/12/12</td>
+					<td>北京市海定区</td>
+					<td>
+						<a href="javascript:;"><span class="badge">删除</span></a>
+						<a href="javascript:;"><span class="badge">修改</span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br><br>
+		
+		<!-- 列表组 -->
+		<ul class="list-group">
+			<li class="list-group-item">
+				<button class="btn btn-warning btn-xs">添加</button>
+			</li>
+			<li class="list-group-item">AAAAAAAAAAAA</li>
+			<li class="list-group-item">BBBBBBBBBBBB</li>
+			<li class="list-group-item">CCCCCCCCCCCC</li>
+			<li class="list-group-item">DDDDDDDDDDDD</li>
+		</ul>
+		
+		<!-- 面板脚注 -->
+		<div class="panel-footer">
+			<p>123@abc.com</p>
+		</div>
+	</div>
+	
+</body>
+</html>

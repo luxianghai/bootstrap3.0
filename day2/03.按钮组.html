@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉菜单</title>
+	<!-- bs的核心样式 -->
+  <link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	
+	<!-- 按钮组的基本使用 .btn-group -->
+	<div class="btn-group">
+		<button class="btn btn-danger">Spring</button>
+		<button class="btn btn-success">Redis</button>
+		<button class="btn btn-info">MongoDB</button>
+	</div>
+	
+	<br><br>
+
+	
+	<!-- 按钮组工具栏 .btn-toolbar -->
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<button class="btn btn-info">添加</button>
+			<button class="btn btn-warning">修改</button>
+			<button class="btn btn-danger">删除</button>
+			<button class="btn btn-primary">查询</button>
+		</div>
+		<div class="btn-group">
+			<button class="btn btn-warning">搜索</button>
+			<button class="btn btn-default">过滤</button>
+		</div>
+	</div>
+	
+	
+	<br><br>
+	
+	
+	<!-- 调整一组按钮组的尺寸 btn-group-lg btn-group-sm btn-group-md btn-group-xs  -->
+	<div class="btn-group btn-group-lg">
+		<button class="btn btn-warning">搜索</button>
+		<button class="btn btn-default">过滤</button>
+	</div>
+	
+	<br><br>
+	
+	<!-- 按钮组的嵌套 -->
+	<div class="btn-group">
+		<a class="btn btn-warning" href="">添加</a>
+		<a class="btn btn-danger" href="">删除</a>
+		<!-- 按钮组嵌套下拉菜单 将 .dropdown 替换为 .btn-group 即可 -->
+		<div class="btn-group">
+			<!-- 下拉按钮 -->
+			<button class="btn btn-info" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+			<!-- 下拉菜单 -->
+			<ul class="dropdown-menu">
+				<li><a href="">Spring</a></li>
+				<li><a href="">Redis</a></li>
+				<li><a href="">MongoDB</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<br><br>
+	
+	<!-- 垂直排列的按钮组 btn-group-vertical -->
+	<div class="btn-group-vertical">
+		<a class="btn btn-warning" href="">添加</a>
+		<a class="btn btn-danger" href="">删除</a>
+		<!-- 按钮组嵌套下拉菜单 将 .dropdown 替换为 .btn-group 即可 -->
+		<div class="btn-group">
+			<!-- 下拉按钮 -->
+			<button class="btn btn-info" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+			<!-- 下拉菜单 -->
+			<ul class="dropdown-menu">
+				<li><a href="">Spring</a></li>
+				<li><a href="">Redis</a></li>
+				<li><a href="">MongoDB</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<br><br>
+	
+	<!-- 按钮组自适应屏幕宽度  btn-group-jusitified -->
+	<div class="btn-group btn-group-justified">
+		<a class="btn btn-warning" href="">添加</a>
+		<a class="btn btn-danger" href="">删除</a>
+		<!-- 按钮组嵌套下拉菜单 将 .dropdown 替换为 .btn-group 即可 -->
+		<div class="btn-group">
+			<!-- 下拉按钮 -->
+			<button class="btn btn-info" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+			<!-- 下拉菜单 -->
+			<ul class="dropdown-menu">
+				<li><a href="">Spring</a></li>
+				<li><a href="">Redis</a></li>
+				<li><a href="">MongoDB</a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

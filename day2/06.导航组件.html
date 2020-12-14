@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体图标</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	<br><br>
+	
+	<div class="container">
+		<!-- 基本的输入框组 input-group -->
+		<form class="form-horizontal row">
+			<div class="form-group">
+				<label form="username" class="control-label col-sm-2">用户名：</label>
+				<div class="input-group col-sm-4 ">
+					<span class="input-group-addon">@</span>
+					<input type="text" id="username" class="form-control"/>
+					<span class="input-group-addon">.com</span>
+				</div>
+			</div>
+		</form>
+		
+		<br><br>
+		<!-- 输入框组的尺寸  -->
+		<div class="input-group input-group-lg col-sm-4 ">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control"/>
+		</div>
+		
+		<br><br>
+		<div class="input-group input-group-sm col-sm-4 ">
+			<span class="input-group-addon">@</span>
+			<input type="text" class="form-control"/>
+			<span class="input-group-addon">.com</span>
+		</div>
+		
+		<br><br>
+		<!-- 输入框组放入其它元素 -->
+		<div class="input-group col-sm-4"  >
+			<span class="input-group-addon"> <input type="checkbox"/></span>
+			<input type="text" class="form-control"/>
+		</div>
+		
+		<br><br>
+		<div class="input-group input-group-sm col-sm-2"  >
+			<span class="input-group-addon"> <input type="radio"/></span>
+			<input type="text" class="form-control"/>
+		</div>
+		
+		<br><br>
+		<!-- 在输入框组中加入按钮式 将 .input-group-addon 替换为 .input-group-btn 即可 -->
+		<div class="input-group input-group-sm col-sm-2"  >
+			<span class="input-group-btn"> <input type="button" class="btn" value="提交"/></span>
+			<input type="text" class="form-control"/>
+		</div>
+		
+		<br><br>
+		<!-- 在输入框组中加入按钮式 将 .input-group-addon 替换为 .input-group-btn 即可 -->
+		<div class="input-group col-sm-2">
+			<input type="text" class="form-control"/>
+			<span class="input-group-btn">
+				<button class="btn" data-toggle="dropdown">选择 <span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="">Redis</a></li>
+					<li><a href="">CentOS</a></li>
+				</ul>
+			</span>
+		</div>	
+		
+		<br><br>
+		
+	</div>
+	
+	
+	
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>标签页</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+	<script>
+		$(() => {
+			$('#btn').click( () => {
+				$('#Profile').tab('show');
+			});
+		})
+	</script>
+</head>
+<body>
+	<br><br>
+	
+	<!-- 标签页js组件 -->
+	<div>
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs" role="tablist">
+	    <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+	    <li ><a href="#profile" data-toggle="tab">Profile</a></li>
+	    <li ><a href="#messages" data-toggle="tab">Messages</a></li>
+	    <li ><a href="#settings" data-toggle="tab">Settings</a></li>
+	    <li ><a href="#about" data-toggle="tab">About</a></li>
+	  </ul>
+	
+	  <!-- Tab panes -->
+	  <div class="tab-content">
+	    <div class="tab-pane active" id="home">...A</div>
+	    <div class="tab-pane" id="profile">...B</div>
+	    <div class="tab-pane" id="messages">...C</div>
+	    <div class="tab-pane" id="settings">...D</div>
+	    <div class="tab-pane" id="about">...E</div>
+	  </div>
+	</div>
+
+<br><br>	
+	
+	<!-- 创建标签选项卡 -->
+	<div>
+		<!-- 标签选项卡 -->
+		<ul class="nav nav-tabs">
+			<li><a href="#Home" data-toggle="tab">Home</a></li>
+			<li><a href="#Setting" data-toggle="tab">Setting</a></li>
+			<li><a href="#Profile" data-toggle="tab">Profile</a></li>
+			<li><a href="#About" data-toggle="tab">About</a></li>
+		</ul>
+		<!-- 选项卡面板 -->
+		<div class="tab-content">
+			<div id="Home" class="tab-pane">Home is good</div>
+			<div id="Setting" class="tab-pane">Setting is good</div>
+			<div id="Profile" class="tab-pane">Profile is good</div>
+			<div id="About" class="tab-pane">About is good</div>
+			
+			<button id="btn" class="btn btn-default">展示指定选项卡面板</button>
+		</div>
+	</div>
+	
+</body>
+</html>

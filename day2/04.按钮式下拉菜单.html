@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉菜单</title>
+	<!-- bs的核心样式 -->
+  <link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	
+	<!-- 按钮式下拉菜单 .btn-group -->
+	<div class="btn-group">
+		<button class="btn btn-default" data-toggle="dropdown">选择课程 <span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="">Spring</a></li>
+			<li><a href="">Redis</a></li>
+			<li><a href="">MongoDB</a></li>
+		</ul>
+	</div>
+	
+	<br><br>
+	
+	<!-- 分裂式下拉菜单 -->
+	<div class="btn-group">
+		<button class="btn btn-default">选择课程</span></button>
+		<button class="btn btn-default" data-toggle="dropdown"><span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="">Spring</a></li>
+			<li><a href="">Redis</a></li>
+			<li><a href="">MongoDB</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- 获得更好的响应式支持 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体图标</title>
+	<!-- bs的核心样式 -->
+	<link rel="stylesheet" href="../bs/css/bootstrap.css"/>
+	<!-- 引入jQuery核心js文件 -->
+	<script src="../bs/js/jquery-3.4.1.js"></script>
+	<!-- 引入bootstrap核心js文件 -->
+	<script src="../bs/js/bootstrap.js"></script>
+</head>
+<body>
+	<br><br>
+	<!-- 构建警告框 .alert alert-info alert-danger ...  -->
+	<div class="alert alert-info">this is a error message</div>
+	<div class="alert alert-success">this is a error message</div>
+	<div class="alert alert-warning">this is a error message</div>
+	<div class="alert alert-danger">this is a error message</div>
+	
+	<!-- 具有关闭功能的警告框 只有在关闭按钮中加入 data-dismiss="alert" 才能实现关闭警告框 -->
+	<div class="alert alert-info">
+		<button class="close" data-dismiss="alert"><span>&times;</span></button>
+		<p>这是一个可以关闭的<a class="alert-info">警告框</a></p>
+	</div>
+</body>
+</html>
